@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 5vh 2vw; /* Uses viewport units for fluidity */
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    padding-top: 3vh;
+  }
+
+  .content-section {
+    margin-bottom: 4rem;
+  }
+
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .device-info {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+  }
+
+  /* Navbar styles */
+  .navbar-brand img {
+    border-radius: 50%; /* Makes the logo round */
+    width: 40px; /* Set a fixed size for the logo */
+    height: 40px; /* Set a fixed size for the logo */
+  }
+
+  /* Ensure the layout is flexible for smaller screens */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem; /* Smaller font size on mobile */
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .container img {
+      width: 100%; /* Full width for images on small screens */
+    }
+  }
+
+  /* Custom section layouts for responsiveness */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .col-md-6 {
+    flex: 1 1 45%; /* Flexbox to allow elements to compress/expand */
+    margin: 0.5rem;
+  }
+
+  .col-md-12 {
+    flex: 1 1 100%; /* Full width on small screens */
+  }
