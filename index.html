@@ -5,15 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community Jobs</title>
     <link rel="icon" href="images/logo.jpeg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      /* General styles */
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+      }
+
+      .navbar {
+        background-color: #343a40;
+      }
+
+      .navbar a {
+        color: #fff !important;
+      }
+
+      .hero {
+        background-color: #007bff;
+        color: #fff;
+        padding: 60px 0;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+
+      .hero p {
+        font-size: 1.25rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: #007bff;
+      }
+
+      .content-section {
+        padding: 60px 0;
+      }
+
+      .mission-vision {
+        background-color: #ffffff;
+        padding: 60px 0;
+      }
+
+      .mission-vision h2 {
+        font-size: 1.8rem;
+        color: #333;
+        font-weight: 500;
+      }
+
+      .mission-vision p {
+        font-size: 1.1rem;
+        color: #555;
+      }
+
+      .poster-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .video-embed-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+      }
+
+      .footer {
+        background-color: #343a40;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .content-section {
+          padding: 40px 0;
+        }
+
+        .section-title {
+          font-size: 1.5rem;
+        }
+
+        .mission-vision h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.jpeg" alt="Community Logo" />
+          <img
+            src="images/logo.jpeg"
+            alt="Community Logo"
+            class="img-fluid"
+            style="max-height: 40px"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -40,8 +155,8 @@
               <a
                 class="nav-link"
                 href="https://unitedcompany01.github.io/landing-site/profiles/james.html"
-                >Back to previous page
-              </a>
+                >Back to Previous Page</a
+              >
             </li>
           </ul>
         </div>
@@ -49,117 +164,194 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero text-center">
       <h1>Welcome to Brgy. Libtong, Naval, Biliran</h1>
       <p>Explore the basic jobs that sustain our community</p>
     </section>
 
+    <!-- Poster Section -->
+    <section class="poster-section text-center py-5 bg-light">
+      <div class="container">
+        <img
+          src="images/poster.png"
+          alt="Community Poster"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="mission-vision">
+      <div class="container">
+        <div class="row">
+          <!-- Mission -->
+          <div class="col-md-6">
+            <h2>Our Mission</h2>
+            <p>
+              Our mission is to empower and uplift the community by providing
+              sustainable job opportunities, promoting local agriculture, and
+              ensuring the economic well-being of our people.
+            </p>
+          </div>
+          <!-- Vision -->
+          <div class="col-md-6">
+            <h2>Our Vision</h2>
+            <p>
+              We envision a thriving community where every individual has access
+              to meaningful work, resources to sustain themselves and their
+              families, and a vibrant economy that reflects the strength of our
+              agriculture and natural resources.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotional Video Section -->
+    <section class="promotional-video text-center py-5">
+      <div class="container">
+        <h2 class="mb-4">Watch Our Promotional Video</h2>
+        <p class="lead">
+          Get a glimpse of our community's efforts and opportunities through our
+          promotional video!
+        </p>
+        <div class="video-embed-container">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/VQrDS8nWQUI?si=3Ci0AYZaYWloOGvp"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
     <!-- Introduction to Libtong, Naval, Biliran Section -->
-    <section id="intro" class="container content-section">
-      <h2 class="section-title">About Libtong, Naval, Biliran</h2>
-      <div class="row">
-        <div class="col-md-6 col-12">
-          <img
-            src="images/libtong-image.jpg"
-            alt="Libtong, Naval, Biliran"
-            class="img-fluid rounded"
-          />
-        </div>
-        <div class="col-md-6 col-12">
-          <p>
-            Libtong is a beautiful barangay (village) located in Naval, Biliran.
-            Known for its scenic landscapes, rich agricultural heritage, and
-            strong sense of community, Libtong thrives on farming activities
-            that provide livelihood for its residents. From rice, banana, and
-            coconut farming to animal husbandry, the community is heavily
-            reliant on these traditional industries.
-          </p>
-          <p>
-            The people of Libtong have a deep connection to the land, and their
-            hard work sustains not only their families but also contributes to
-            the broader economy of Naval and the Biliran province. The harmony
-            between nature and farming practices in Libtong offers both beauty
-            and livelihood.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Rice Section -->
-    <section id="rice" class="container content-section">
-      <h2 class="section-title">Rice Farming</h2>
-      <div class="row">
-        <div class="col-md-6 col-12">
-          <img src="images/rice.avif" alt="Rice Farming" />
-        </div>
-        <div class="col-md-6 col-12">
-          <p>
-            Rice farming is one of the most important agricultural jobs in our
-            community. Rice is a staple food and a source of income for many
-            farmers here.
-          </p>
+    <section id="intro" class="content-section">
+      <div class="container">
+        <h2 class="section-title">About Libtong, Naval, Biliran</h2>
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <img
+              src="images/libtong-image.jpg"
+              alt="Libtong, Naval, Biliran"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div class="col-md-6 col-12">
+            <p>
+              Libtong is a beautiful barangay (village) located in Naval,
+              Biliran. Known for its scenic landscapes, rich agricultural
+              heritage, and strong sense of community, Libtong thrives on
+              farming activities that provide livelihood for its residents. From
+              rice, banana, and coconut farming to animal husbandry, the
+              community is heavily reliant on these traditional industries.
+            </p>
+            <p>
+              The people of Libtong have a deep connection to the land, and
+              their hard work sustains not only their families but also
+              contributes to the broader economy of Naval and the Biliran
+              province. The harmony between nature and farming practices in
+              Libtong offers both beauty and livelihood.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Coconut Section -->
-    <section id="coconut" class="container content-section">
-      <h2 class="section-title">Coconut Farming</h2>
-      <div class="row">
-        <div class="col-md-6 col-12">
-          <img src="images/coconut.webp" alt="Coconut Farming" />
+    <!-- Farming Sections (Rice, Coconut, Banana, Animal) -->
+    <section id="farming" class="content-section">
+      <div class="container">
+        <!-- Rice Section -->
+        <h2 class="section-title">Rice Farming</h2>
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <img
+              src="images/rice.avif"
+              alt="Rice Farming"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div class="col-md-6 col-12">
+            <p>
+              Rice farming is one of the most important agricultural jobs in our
+              community. Rice is a staple food and a source of income for many
+              farmers here.
+            </p>
+          </div>
         </div>
-        <div class="col-md-6 col-12">
-          <p>
-            Coconut farming provides both food and raw materials for various
-            industries. Coconut trees are essential to our local economy,
-            providing not just food but also materials for products like coconut
-            oil.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Banana Section -->
-    <section id="banana" class="container content-section">
-      <h2 class="section-title">Banana Farming</h2>
-      <div class="row">
-        <div class="col-md-6 col-12">
-          <img src="images/banana.avif" alt="Banana Farming" />
+        <!-- Coconut Section -->
+        <h2 class="section-title">Coconut Farming</h2>
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <img
+              src="images/coconut.webp"
+              alt="Coconut Farming"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div class="col-md-6 col-12">
+            <p>
+              Coconut farming provides both food and raw materials for various
+              industries. Coconut trees are essential to our local economy,
+              providing not just food but also materials for products like
+              coconut oil.
+            </p>
+          </div>
         </div>
-        <div class="col-md-6 col-12">
-          <p>
-            Banana farming is another significant agricultural activity. Bananas
-            are widely consumed both locally and internationally. Farmers use
-            various techniques to ensure a healthy harvest year-round.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Animal Farming Section -->
-    <section id="farming" class="container content-section">
-      <h2 class="section-title">Animal Farming</h2>
-      <div class="row">
-        <div class="col-md-6 col-12">
-          <img src="images/animal.avif" alt="Animal Farming" />
+        <!-- Banana Section -->
+        <h2 class="section-title">Banana Farming</h2>
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <img
+              src="images/banana.avif"
+              alt="Banana Farming"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div class="col-md-6 col-12">
+            <p>
+              Banana farming is another significant agricultural activity.
+              Bananas are widely consumed both locally and internationally.
+              Farmers use various techniques to ensure a healthy harvest
+              year-round.
+            </p>
+          </div>
         </div>
-        <div class="col-md-6 col-12">
-          <p>
-            Animal farming, including raising livestock such as cows, goats, and
-            chickens, is another key industry that supports our community. It
-            provides food, leather, and other essential products.
-          </p>
+
+        <!-- Animal Farming Section -->
+        <h2 class="section-title">Animal Farming</h2>
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <img
+              src="images/animal.avif"
+              alt="Animal Farming"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div class="col-md-6 col-12">
+            <p>
+              Animal farming, including raising livestock such as cows, goats,
+              and chickens, is another key industry that supports our community.
+              It provides food, leather, and other essential products.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <p>&copy; 2024 Community Jobs. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS & Popper.js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.js"></script>
   </body>
